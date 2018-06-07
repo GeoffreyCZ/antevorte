@@ -4,4 +4,7 @@
     <managers>41</managers>
     <kilometers>205</kilometers>
     <money>614</money>
+    <financePercent>34</financePercent>
+    <adviseryPercent>28</adviseryPercent>
+    <peoplePercent>38</peoplePercent>
 </stats>

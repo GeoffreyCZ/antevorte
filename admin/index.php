@@ -14,6 +14,9 @@ if (!empty($_POST)) {
     $stats->managers = $_POST['managers'];
     $stats->kilometers = $_POST['kilometers'];
     $stats->money = $_POST['money'];
+	$stats->financePercent = $_POST['financePercent'];
+	$stats->adviseryPercent = $_POST['adviseryPercent'];
+	$stats->peoplePercent = $_POST['peoplePercent'];
     $stats->asXML('stats.xml');
     echo "<script type='text/javascript'>alert('Uloženo')</script>";
 }
@@ -61,6 +64,42 @@ if (!empty($_POST)) {
 
             </div>
         </div>
+
+		<!-- Appended Input-->
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="financePercent">Věnujeme se financím</label>
+			<div class="col-md-2">
+				<div class="input-group">
+					<input id="financePercent" name="financePercent" class="form-control" placeholder="" value="<?php echo $stats->financePercent; ?>" type="text" required="">
+					<span class="input-group-addon">%</span>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Appended Input-->
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="adviseryPercent">Věnujeme se procesnímu a projektovému poradentství</label>
+			<div class="col-md-2">
+				<div class="input-group">
+					<input id="adviseryPercent" name="adviseryPercent" class="form-control" placeholder="" value="<?php echo $stats->adviseryPercent; ?>" type="text" required="">
+					<span class="input-group-addon">%</span>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Appended Input-->
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="peoplePercent">Věnujeme se udržitelnému rozvoji lidí</label>
+			<div class="col-md-2">
+				<div class="input-group">
+					<input id="peoplePercent" name="peoplePercent" class="form-control" placeholder="" value="<?php echo $stats->peoplePercent; ?>" type="text" required="">
+					<span class="input-group-addon">%</span>
+				</div>
+
+			</div>
+		</div>
         <!-- Button -->
         <div class="form-group">
             <label class="col-md-4 control-label" for="submit"></label>

@@ -143,6 +143,9 @@
 			</div>
 		</div>
 	</section><!--/#services-->
+	<?php
+	$xml=simplexml_load_file("admin/stats.xml") or die("Error: Cannot create object");
+	?>
 	<section class="parallax" id="about-us">
 		<div class="container">
 			<div class="row">
@@ -161,24 +164,26 @@
 						<div class="single-skill wow fadeInDown" data-wow-delay="300ms" data-wow-duration="1000ms">
 							<p class="lead">Financím</p>
 							<div class="progress">
-								<div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="34">
-									34%
+								<div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="<?php echo $xml->financePercent; ?>">
+									<?php
+									echo $xml->financePercent;
+									?>%
 								</div>
 							</div>
 						</div>
 						<div class="single-skill wow fadeInDown" data-wow-delay="400ms" data-wow-duration="1000ms">
 							<p class="lead">Procesnímu a projektovému poradentství</p>
 							<div class="progress">
-								<div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="28">
-									28%
+								<div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="<?php echo $xml->adviseryPercent; ?>">
+									<?php echo $xml->adviseryPercent; ?>%
 								</div>
 							</div>
 						</div>
 						<div class="single-skill wow fadeInDown" data-wow-delay="500ms" data-wow-duration="1000ms">
 							<p class="lead">Udržitelnému rozvoji lidí</p>
 							<div class="progress">
-								<div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="38">
-									38%
+								<div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="<?php echo $xml->peoplePercent; ?>">
+									<?php echo $xml->peoplePercent; ?>%
 								</div>
 							</div>
 						</div>
@@ -439,9 +444,6 @@
 		<!--</div>&lt;!&ndash; /#portfolio-single-wrap &ndash;&gt;-->
 	</section><!--/#portfolio-->
 	<section class="parallax" id="features">
-        <?php
-            $xml=simplexml_load_file("admin/stats.xml") or die("Error: Cannot create object");
-        ?>
 		<div class="container">
 			<div class="row count">
 				<div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1000ms">
