@@ -13,7 +13,7 @@
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/presets/preset4.css" id="css-preset" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet"><!--[if lt IE 9]><script src="js/html5shiv.js"></script><script src="js/respond.min.js"></script><![endif]-->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 	<link href="images/favicon.ico" rel="shortcut icon">
 </head><!--/head-->
 <body>
@@ -46,7 +46,7 @@
 						<li class="scroll">
 							<a href="#services">Služby</a>
 						</li>
-						<li class="scroll">s
+						<li class="scroll">
 							<a href="#about-us">O nás</a>
 						</li>
 						<li class="scroll">
@@ -567,7 +567,7 @@
 	</script>
 	<script src="js/bootstrap.min.js" type="text/javascript">
 	</script>
-	<script src="http://maps.google.com/maps/api/js?sensor=true&key=AIzaSyAJBPBXzdhK7KhfJ608qtGF-I7W3xetXJc" type="text/javascript">
+	<script src="https://maps.google.com/maps/api/js?key=AIzaSyAJBPBXzdhK7KhfJ608qtGF-I7W3xetXJc" type="text/javascript">
 	</script>
 	<script src="js/jquery.inview.min.js" type="text/javascript">
 	</script>
@@ -577,7 +577,7 @@
 	</script>
 	<script src="js/smoothscroll.js" type="text/javascript">
 	</script>
-	<script src="js/jquery.countTo.js" type="text/javascript">
+	<script src="js/jquery.countto.js" type="text/javascript">
 	</script>
 	<script src="js/lightbox.min.js" type="text/javascript">
 	</script>
